@@ -244,6 +244,16 @@ Render the content variable wherever you want your main content to be injected i
 ...{% endcapture %}
 {% include JB/liquid_raw %}
 
+{% highlight html %}...
+<body>
+  <div id="sidebar"> ... </div>
+  <div id="main">
+    |.{content}.|
+  </div>
+</body>
+...{% endhighlight %}
+
+
 ### Sub-Templates
 
 Sub-templates are exactly templates with the only difference being they 
